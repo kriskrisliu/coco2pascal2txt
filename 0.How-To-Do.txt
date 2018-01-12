@@ -1,0 +1,17 @@
+1.coco2pascal.py
+  1) Activate the virtualenv 
+	e.g. $ source ~github/darknet/py2.7/bin/activate
+  2) $ python2 coco2pascal.py  func<create_annotations>  arg<coco_annotation.json>  arg<path_to_xml_folder>
+
+2.pascal2txt.py
+  1) Set [classes (Line 10)] in pascal2txt.py
+	e.g. classes = ['bowl','banana']
+  2) Set 4 folder paths
+	e.g. 	txt_folder = '/home/kris/github/coco2pascal2txt/txts/'
+		list_folder = '/home/kris/github/coco2pascal2txt/jpg_pathList/'
+		xml_folder = '/home/kris/github/coco2pascal2txt/xmls/'
+		jpg_folder = '<path-to-jpg>'
+  3) $ python pascal2txt.py
+
+3.copy_useful_images.py
+  1) $ python copy_useful_images.py <function> <path-to-all-jpg> <path-to-some-jpg> <path-to-list-folder>
